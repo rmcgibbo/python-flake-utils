@@ -12,13 +12,13 @@
           {
             # cc https://github.com/NixOS/nixpkgs/issues/44426
             python38PackagesOverrides = (prev.python38PackagesOverrides or [ ]) ++ [
-              (pythonSelf: pythonSuper: (func pythonSuper))
+              (pythonSelf: pythonSuper: (func pythonSelf))
             ];
             python39PackagesOverrides = (prev.python39PackagesOverrides or [ ]) ++ [
-              (pythonSelf: pythonSuper: (func pythonSuper))
+              (pythonSelf: pythonSuper: (func pythonSelf))
             ];
             python310PackagesOverrides = (prev.python310PackagesOverrides or [ ]) ++ [
-              (pythonSelf: pythonSuper: (func pythonSuper))
+              (pythonSelf: pythonSuper: (func pythonSelf))
             ];
 
             python38 = prev.python38.override {
